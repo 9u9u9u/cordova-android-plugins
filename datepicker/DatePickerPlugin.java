@@ -107,7 +107,7 @@ public class DatePickerPlugin extends CordovaPlugin {
                 @Override
                 public void run() {
                     final TimeSetListener timeSetListener = new TimeSetListener(datePickerPlugin, callbackContext);
-                    final TimePickerDialog timeDialog = new TimePickerDialog(currentCtx, timeSetListener, mHour,
+                    final TimePickerDialog timeDialog = new TimePickerDialog(currentCtx, android.R.style.Theme_Holo, timeSetListener, mHour,
                             mMinutes, DateFormat.is24HourFormat(currentCtx));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                         timeDialog.setCancelable(true);
@@ -145,7 +145,7 @@ public class DatePickerPlugin extends CordovaPlugin {
                 @Override
                 public void run() {
                     final DateSetListener dateSetListener = new DateSetListener(datePickerPlugin, callbackContext);
-                    final DatePickerDialog dateDialog = new DatePickerDialog(currentCtx, dateSetListener, mYear,
+                    final DatePickerDialog dateDialog = new DatePickerDialog(currentCtx, android.R.style.Theme_Holo, dateSetListener, mYear,
                             mMonth, mDay);
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                         DatePicker dp = dateDialog.getDatePicker();
