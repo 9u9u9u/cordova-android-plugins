@@ -147,6 +147,7 @@ public class DatePickerPlugin extends CordovaPlugin {
                     final DateSetListener dateSetListener = new DateSetListener(datePickerPlugin, callbackContext);
                     final DatePickerDialog dateDialog = new DatePickerDialog(currentCtx, DatePickerDialog.THEME_DEVICE_DEFAULT_DARK, dateSetListener, mYear,
                             mMonth, mDay);
+                            //http://developer.android.com/reference/android/app/DatePickerDialog.html
                             //android.R.style.Theme_Holo_Dialog_MinWidth
                             //Theme_Holo_Light_Dialog
                             //Widget_Holo_DatePicker
